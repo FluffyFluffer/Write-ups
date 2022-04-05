@@ -1,6 +1,6 @@
 # Writeup Hack the Box - Forge
 
-At the classes *Zaawansowane testy penetracyjne* in Wroclaw University of Science and Technology we were supposed to solve the machine from Hack the Box. We chose *Forge*. This write-up was made in cooperation with [TheArqsz](https://github.com/TheArqsz) and [Tacola320](https://github.com/Tacola320).
+At the classes *Zaawansowane testy penetracyjne* in Wroclaw University of Science and Technology we were supposed to solve the machine from Hack the Box. We chose *Forge*. This writeup was made in cooperation with [TheArqsz](https://github.com/TheArqsz) and [Tacola320](https://github.com/Tacola320).
 
 ![forge_logo](./images/logo.png) 
 
