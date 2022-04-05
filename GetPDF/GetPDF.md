@@ -2,7 +2,7 @@
 The challenge was available at [CyberDefenders](https://cyberdefenders.org/). It was about analyzing malware PDF file. I would like to notice, that I did not manage to solve 2 tasks :(
 
 **Operating system**: Windows 10\
-**Used tools**: [de4js](https://lelinhtinh.github.io/de4js/), [pdfid](https://github.com/Rafiot/pdfid), pdfparser, peepdf, [PDFStreamDumper](https://github.com/dzzie/pdfstreamdumper), [Wireshark](https://www.wireshark.org/download.html)
+**Used tools**: [de4js](https://lelinhtinh.github.io/de4js/), [pdfid](https://github.com/Rafiot/pdfid), [peepdf](https://github.com/jesparza/peepdf), [PDFStreamDumper](https://github.com/dzzie/pdfstreamdumper), [Wireshark](https://www.wireshark.org/download.html)
 
 From the scenario I learnt that user opens a webpage, then he is redirected to URL of a malicious PDF. After opening it, Adobe Acrobat Reader was exploited and as a result it downloaded and installed malware. The network trafiic was captured in `lala.pcap`.
 
@@ -14,7 +14,7 @@ Answer to the first task is available at `Statistics->HTTP->Requests` option in 
 ## What is the URL which contains the JS code?
 In pcap was only 76 lines, so I decied to do as much as I could manually. I looked for requests to webpages. The first one appeared in 6 request, but in the response it got `301 Moved Permanently`, and the request after that was one I was looking for. In 10 row is a request to website, and in 12 is the response, which contained JavaScript code - `http://blog.honeynet.org.my/forensic_challenge/`
 
-![2.png](/images/2.png)
+![2.png](./images/2.png)
 
 ## What is the URL hidden in the JS code?
 I followed HTTP Stream of request in 12 row - `Follow -> HTTP Stream`.
